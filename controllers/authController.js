@@ -40,7 +40,7 @@ exports.verifyCookie=(req,res)=>{
       
         try {
           const decoded = verifyToken(token);
-          console.log(decoded)
+        //   console.log(decoded)
           res.status(200).json({decoded})
         } catch (err) {
           res.status(401).json({ message: 'Invalid token' });
